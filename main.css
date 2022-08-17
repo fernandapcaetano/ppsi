@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(248, 244, 238);font-family: Arial, Helvetica, sans-serif
+}
+/*a{
+    color: #ff0000;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+.link_navegacao{
+    color:brown;
+}
+.link_navegacao:hover{
+    color: rgb(248, 244, 238);
+    background-color: brown;
+}
+
+/*Parte 2*/
+
+/*ul li a{
+    color: brown;
+}
+ul li a:hover{
+    color: rgb(248, 244, 238);
+    background-color: brown;
+}
+#principal li{
+    list-style-type: none;
+    display: inline;
+    background-color: black;
+    color: white;
+}
+ul#principal{
+    padding: 0;
+}*/
+
+nav{
+    background-color: black;
+    padding: 1px;
+    border-radius: 5px;
+}
+ul#principal{
+    padding: 0;
+}
+
+ul#principal li{
+    display: inline;
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+ul#principal li:hover{
+    background-color: blueviolet;
+    transition: 0.2s ease-in-out;
+
+}
+
+ul#principal li a{
+    text-decoration: none;
+    color: white;
+}
