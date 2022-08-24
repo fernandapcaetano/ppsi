@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+	/* margin: 0;
+	padding: 0; */
+	font-size: 20px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	background-color: #663300;
+	color:white;
+	padding: 14px;
+}
+h2{
+	font-weight: bold;
+	color: #494749;
+}
+h2::after{
+	content: url(../sources/go-link.jpg);
+	color: red;
+	font-size: 10px;
+	font-weight: bold; 
+}
+p{
+	color: #6b6c6e;
+}
+
+/* irmaos adjacentes apartir do segundo
+p ~ p{
+	background-color: red;
+} */
+img{
+	border-radius: 50% 0 50% 0;
+	float: right;
+}
+h3{
+	font-weight: bold;
+	color: #494749;
+}
+ul{
+	list-style-type: circle;
+	color: #6b6c6e;
+}
+/*  COMENTAR CTRL + ;.
+ul > a{
+	background-color: yellow;
+}*/
+/* ul li:first-child{
+	background-color: yellow;
+}
+ul li:nth-child(3){
+	background-color: yellow;
+}
+ul li:last-child{
+	background-color: yellow;
+} */
+/* ul li:nth-child(odd){
+	background-color: red;
+} */
+address{
+	background-color: #f5f5dc;
+	width: 50%;
+	border-radius: 10px;
+	padding: 10px;
+	color: #6b6c6e;
+	margin: 10px;
+}
+address > strong{
+	color: #494749;
+	/*background-color: yellow;*/
+}
+address .telefone{
+	color: #6b6c6e;
+}
+address .site{
+	color: #663300;
+	font-weight:600;
+}
+[href]::after{
+	content: url(../sources/go-link.jpg);
+	margin-left: 5px;
+}
