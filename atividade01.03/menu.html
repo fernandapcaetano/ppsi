@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Semântica e CSS</title>
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* MUDAR AS CORES DOS LINKS DA LISTA PARA VERMELHO */
+        /* OPÇÃO 1, SELEÇÃO POR CLASSE*/
+        .vermelho{
+            color: red;
+        }
+        /* OPÇÃO 2, SELEÇÃO POR HERANÇA*/
+        ul li a{
+            color: red;
+        }
+
+    /* SELEÇÃO POR HERANÇA E ID */
+        nav#menu_principal a{
+            color: red;       
+        }
+        /* ESTILIZANDO LISTA */
+        #menu-principal ul{
+            list-style-type: none;
+            /* TIRANDO PADDING PADRÃO */
+            padding: 0;
+        }
+        /* ESTILIZANDO PARA O CONTEUDO FICAR EM LINHA */
+        #menu-principal ul li{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.youtube.com">Youtube</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+
+    <!-- A TAG NAV INDICA UMA AREA  DE NAVEGAÇÃO, UM MENU POR EXEMPLO -->
+    <nav id="menu-principal">
+        <ul>
+            <li><a class="vermelho" href="https://www.facebook.com">Facebook</a></li>
+            <li><a class="vermelho" href="https://www.youtube.com">Youtube</a></li>
+            <li><a class="vermelho" href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
