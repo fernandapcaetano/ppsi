@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout com elementos flutuantes</title>
+
+    <!-- CSS -->
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0 auto;
+            color: #eae2b7;
+            font-weight: bold;
+            max-width: 1200px;
+        }
+
+        header{
+            background-color: #fb8500;
+        }
+        main{
+            background-color: #219ebc;
+            width: 75%;
+            margin-right: 2%;
+        }
+        
+        aside{
+            background-color: #023047;
+            width: 15%;
+        }
+        main, aside{
+            float: left;
+            height: 400px;
+            padding: 2%;    
+        }
+        footer{
+            background-color: #ffb703;
+        }
+        header, footer{
+            width: 96%;
+            height: 80px;
+            padding: 2%;
+            /* Clear - Indicando que nem na esquerda e direita quer algo enconstando no elemento */
+            clear: both
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <main>
+        Main
+    </main>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
