@@ -1,0 +1,3 @@
+Converter o layout flex para grid layout
+
+display: grid
