@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+
+    <style>
+        body > *{
+            display: flex;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+
+
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            column-gap: 10px;
+
+
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header, footer{
+            /* ocupar 1000% dos lugar onde eles estao */
+            flex-basis: 100%;
+        }
+
+        header{
+            background-color: #e9c46a;
+            display: flex;
+        }
+        header nav ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            column-gap: 20px;
+            justify-content: flex-end;
+        }
+        header a{
+            color: black;
+            font-size: 21px;
+            text-decoration: none;
+        }
+        
+        header,nav, main, aside, footer{
+            padding: 10px;
+        }
+        nav{
+            background-color: #e76f51;
+            flex: 1;
+        }
+        /* main, aside{
+            flex: 1;
+        } */
+        main{
+            background-color: #264653;
+            flex: 4;
+            flex-direction: column;
+            /* margin: 0 10px; */
+            /* margin-left: 10px;
+            margin-right: 10px; */
+        }
+        aside{
+            background-color:#2a9d8f;
+            flex: 1;
+            flex-direction: column;
+        }
+        footer{
+            background-color: #f4a261;
+        }
+        p{
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>FATEC</h1> 
+         <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <nav>
+        <h2>nav</h2>
+    </nav>
+
+    <main>
+        <h2>main</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita impedit nemo reiciendis! Ab architecto cumque ipsa fugiat odio esse assumenda consectetur excepturi, voluptatum iure quisquam odit corporis a et! Harum?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas sunt tempore eos repellendus illo? Qui aspernatur, modi consequuntur sunt repellendus temporibus tenetur omnis quas at, repudiandae eum nisi eveniet.</p>
+    </main>
+
+    <aside>
+        <h2>aside</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi culpa repellat facilis, sit omnis? Sed, dicta eius? Deserunt ratione iusto iure commodi tempore excepturi minus at labore quas obcaecati?</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi culpa repellat facilis, sit omnis? Sed, dicta eius? Deserunt ratione iusto iure commodi tempore excepturi minus at labore quas obcaecati?</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi culpa repellat facilis, sit omnis? Sed, dicta eius? Deserunt ratione iusto iure commodi tempore excepturi minus at labore quas obcaecati?</p>    
+    </aside>
+
+    <footer> <h2>footer</h2> </footer>
+
+</body>
+</html>
