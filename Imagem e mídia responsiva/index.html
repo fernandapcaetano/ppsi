@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IMPORTANTE -->
+    <!-- Viewport: Reduz o conteúdo para caber na tela -->
+    <!-- Initial Scale tira o zoom quando atualiza o site --> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+
+    <title>Imagem e mídia responsiva</title>
+
+    <style>
+        img{
+            max-width: 100%;
+            /* width: 800px; */
+            height: auto;
+        }
+        
+        @media screen and (min-width: 800px) {
+            body{
+                background-color: brown;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width:800px){
+            body{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img loading="lazy" src="img/93622629.jfif" alt="cachorro ai folou">
+
+    <picture>
+        <source srcset="img/93622629.jfif"
+                media="(orientation: portrait)">
+        <img src="img/27cede11f3b1dd70e5ba7120851aaca2.jpg" alt="">
+    </picture>
+</body>
+</html>
