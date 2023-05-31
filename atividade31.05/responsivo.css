@@ -1,0 +1,10 @@
+@media screen and (max-width: 850px) {
+    body{
+        font-size: 1.125em;
+        flex-direction: column;
+        row-gap: 2px;
+    }
+    aside{
+        display: none;
+    }
+}
